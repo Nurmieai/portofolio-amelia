@@ -78,7 +78,6 @@ body {
 }
 .aps1{
     display: flex;
-    padding-top:100px ;
 }
 .aps1 h2{
     color: #e2c298;
@@ -110,6 +109,42 @@ body {
     border-radius: 50px;
     padding-bottom: 10px;
 }
+@media screen and (max-width: 768px) {
+    .aps1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aps1 h2, .aps1 h1 {
+        font-size: 30px; /* Ukuran teks lebih kecil agar pas di HP */
+        padding-top: 50px;
+        padding-left: 0;
+    }
+
+    .aps1 h5 {
+        font-size: 12px; 
+        text-align: center;
+    }
+
+    .aps1 img {
+        width: 60%; /* Supaya gambar lebih proporsional */
+        margin-left: 0;
+        margin-top: 50px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aps1 h2, .aps1 h1 {
+        font-size: 24px; /* Lebih kecil untuk layar lebih kecil */
+    }
+
+    .aps1 img {
+        width: 80%;
+    }
+}
+
 .card-content1 {
     opacity: 0;
     transform: translateY(30px);
@@ -121,10 +156,9 @@ body {
     transform: translateY(0);
 }
 .aps2{
-    padding-top: 100px;
+    padding-top: 35px;
     text-align: center;
     padding-bottom: 35px;
-    padding-right: 20px; ;
 }
 .aps2 a{
     text-decoration: none;
@@ -160,6 +194,41 @@ body {
     margin-right: 70px;
     padding-bottom: 35px;
 }
+@media screen and (max-width: 768px) {
+    .fotmel1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    .fotmel1 img {
+        width: 80%; /* Gambar lebih kecil agar pas di layar HP */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fotmel1 h4 {
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 14px; /* Ukuran font lebih kecil agar lebih mudah dibaca */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fotmel1 img {
+        width: 90%;
+    }
+
+    .fotmel1 h4 {
+        font-size: 12px; /* Ukuran font lebih kecil di layar lebih kecil */
+    }
+}
+
 .eksperience a{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    margin-left: 50px;
@@ -171,8 +240,6 @@ body {
 }
 .eksperience{
     margin-top: 20px;
-    padding-left: 100px;
-    padding-top: 100px;
 }
 .lia {
     padding-top: 20px;
@@ -230,13 +297,11 @@ body {
 .skil{
     text-align: center;
     margin-top: 10px;
-    padding-right: 50px;
 }
 .aps3{
-    padding-top: 100px;
+    padding-top: 35px;
     text-align: center;
     padding-bottom: 35px;
-    padding-right: 14px; ;
 }
 .aps3 a{
     text-decoration: none;
@@ -273,6 +338,39 @@ body {
     padding-bottom: 35px;
     margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+    .fotmel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    .fotmel2 img {
+        width: 70%; /* Supaya gambar tidak terlalu besar */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fotmel2 h2 {
+        margin-top: 15px;
+        font-size: 16px; /* Font lebih kecil agar lebih pas di HP */
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .fotmel2 img {
+        width: 80%;
+    }
+
+    .fotmel2 h2 {
+        font-size: 14px;
+    }
+}
+
 .saparani{
     text-align: center;
     margin-top: 10px;
@@ -330,9 +428,6 @@ body {
 }
 .fikat{
     margin-top: 20px;
-    padding-top: 100px;
-    text-align: center ;
-    padding-right: 80px;
 }
 .rani {
     padding-top: 20px;
@@ -374,10 +469,9 @@ body {
 }
 
 .aps7{
-    padding-top: 100px;
+    padding-top: 35px;
     text-align: center;
     padding-bottom: 35px;
-    padding-right: 30px;
 }
 .aps7 a{
     text-decoration: none;
@@ -389,15 +483,15 @@ body {
 }
 .contact {
     background: white;
-    padding: 40px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 500px;
     text-align: center;
-    margin-left: 412px;
-    padding-bottom: 50px;
+    margin: 0 auto; /* Posisi elemen di tengah */
 }
+
 
 .contact-info {
     list-style: none;
@@ -455,17 +549,22 @@ body {
 }
 
 @media (max-width: 768px) {
-    .contact-container {
-        width: 100%;
+    .contact {
+        width: 90%;
+        margin: 20px auto;
         padding: 20px;
     }
 }
 footer{
     background-color: #d3aa75;
-    padding: 10px 20px;
+    padding: 1.3rem;
     text-align: center;
     margin-top: 15px;
     height: 70px;;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
 }
 footer p{
     text-align:center ;

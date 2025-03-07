@@ -3,164 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-   <link rel="stylesheet" href="css/style.css">
+    <title>Opening Portofolio</title>
+    <link rel="stylesheet" href="css/op.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Portofolio</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">Tentang</a></li>
-                <li><a href="#projects">Proyek</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-        </nav>
-    </header>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
-    <div id="home" class="aps1">
-        <h2>Siapa itu</h2>
-        <h1>Amelia Putri?</h1>
-        <img src="img/putih.jpg" width="400px">
-    </div>
-    <div id="about" class="aps2">
-        <a href="">Tentang</a>
-    </div>
-    <div class="fotmel1">
-        <img src="img/cynk1.jpg" width="300px">
-        <h4>Hai, kenalin! Aku Amelia Putri Saparani, siswi di SMKS Mahaputra Cerdas Utama. Aku orangnya penasaran dan suka belajar hal baru, apalagi yang berhubungan dengan Coding, Matematika, Naik Gunung, Berlari ataupun Bersepedah. Selain itu, aku juga aktif di organisasi seperti Keputrian di sekolah, Karang Taruna dan Remaja Masjid di lingkungan rumah, serta ekskul Rohis di Sekolah, karena menurutku pengalaman itu penting.
-            Orang-orang bilang aku ceria dan gampang bergaul, tapi kalau aku sudah fokus pada sesuatu, aku bisa serius banget! Aku punya impian menjadi seorang Front-end, Guru Matematika, dan menjadi seorang Peternak Lele, dan aku yakin usaha yang konsisten bakal membantu aku mencapainya.
-        </h4>
-     </div>
-    <div class="eksperience">
-        <a href="">Berbagi Pengalaman Tentang Amelia</a>
-    </div>
-<div class="lia">
-    <div class="card">
-        <img src="img/ketuaput.jpg" alt="Gambar 1">
-        <div class="card-content">
-            <h3>Ketua Keputrian</h3>
-            <p>Pada tahun 2024, saya mendapat kepercayaan untuk menjabat sebagai Ketua Organisasi Keputrian di SMK Mahaputra, sebuah amanah yang memberi saya banyak pengalaman kepemimpinan.</p>
+    <div class="container">
+        <div class="content">
+            <div class="text">
+                <h1>SANG JAGOAN?</h1>
+                <p>
+                    Welcome to portofolio Amelia Putri! aku adalah seorang yang selalu ingin mencari tahu. 
+                    dengan keberanian dan sikap pantang menyerah yang aku miliki, aku siap menghadapi tantangan baru. 
+                    silakan masuk untuk melihat lebih banyak tentang aku gais!
+                </p>
+            </div>
+            <div class="image">
+                <img src="img/amel2-removebg-preview.png" alt="Foto Profil">
+            </div>
         </div>
+        <button class="btn" onclick="masukPortofolio()">lets go</button>
     </div>
 
-    <div class="card">
-        <img src="img/divisi pendidikan.jpg" alt="Gambar 2">
-        <div class="card-content">
-            <h3>Divisi Pendidikan</h3>
-            <p>Saat bergabung di ekskul Rohis, saya diberi kepercayaan untuk menjadi pengurus di Divisi Pendidikan,saya turut berperan dalam mengelola kegiatan keilmuan dan pembelajaran.</p>
-        </div>
-    </div>
+    <script src="js/op.js"></script>
+</body>
+</html>
 
-    <div class="card">
-        <img src="img/mc literasi.jpg" alt="Gambar 3">
-        <div class="card-content">
-            <h3> MC Literasi</h3>
-            <p>Di SMK Mahaputra, setiap Senin ada kegiatan literasi, dan sebagai tim literasi, saya kadang bertugas sebagai MC. sebuah pengalaman yang melatih kepercayaan diri dan Public Speaking</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="img/antares.jpg" alt="Gambar 4">
-        <div class="card-content">
-            <h3>Antares</h3>
-            <p>Saat kelas 10, saya mengikuti workshop Antares IoT di sekolah. Dalam kegiatan tersebut, saya mengembangkan sebuah perangkat yang dapat mematikan lampu dari jarak jauh</p>
-        </div>
-    </div>
-    <div class="card">
-        <img src="img/penulis.jpg" alt="Gambar 4">
-        <div class="card-content">
-            <h3>penulis</h3>
-            <p>Waktu kelas 9 SMP, cerpen saya terpilih untuk diterbitkan dalam buku berjudul "Bukan Sekadar Harapan". Sebuah pengalaman berharga yang makin memotivasi saya untuk terus menulis!</p>
-        </div>
-    </div>
-</div>
-    <div class="skil">
-        <a href="">Skill yang dimiliki</a>
-    </div>
-    <div class="fotmel2">
-        <img src="img/presen1.jpg" width="200px">
-        <h2>Public Speaking</h2>
-     </div>
-        <div id="projects" class="aps3">
-            <a href="">Proyek</a>
-        </div>
-        <div class="saparani">
-            <div class="wrapper">
-                <div class="row">
-                    <div class="item"><img src="img/game.jpg" alt="Foto"><h3>Game Mathemagix</h3></div>
-                    <div class="item"><img src="img/Screenshot (84).png" alt="Foto"><h3>Web Cek-Kodam</h3></div>
-                    <div class="item"><img src="img/Screenshot (85).png" alt="Foto"><h3>Web Sekolah</h3></div>
-                    <div class="item"><img src="img/iot.jpg" alt="Foto"><h3>Alat Kelembapan Tanah</h3></div>
-                </div>
-                <div class="row">
-                    <div class="item"><img src="img/figfilm.jpg" alt="Foto"><h3>Desain Aplikasi Film</h3></div>
-                    <div class="item"><img src="img/figpatu.jpg" alt="Foto"><h3>Desain Web Sepatu</h3></div>
-                    <div class="item"><img src="img/figsekul.jpg" alt="Foto"><h3>Desain Web Sekolah</h3></div>
-                </div>
-            </div>
-        </div> 
-        <div class="fikat">
-            <a href="">Sertifikat yang didapat</a>
-        </div>
-        <div class="rani">
-            <div class="card">
-                <img src="img/fikat rank.jpg" alt="Gambar 1">
-                <div class="card-content">
-                    <h3>Siswa Berprestasi</h3>
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="img/fikat junjin.jpg" alt="Gambar 2">
-                <div class="card-content">
-                    <h3>Kunjungan Industri</h3>
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="img/fikat penulis.jpg" alt="Gambar 3">
-                <div class="card-content">
-                    <h3>Penulis</h3>
-                </div>
-            </div>
-        
-            <div class="card">
-                <img src="img/fikat korea.jpg" alt="Gambar 4">
-                <div class="card-content">
-                    <h3>Kelas Internasional</h3>
-                </div>
-            </div>
-        </div>  
-        <div id="contact" class="aps7">
-            <a href="">Kontak</a>
-        </div>
-        <div class="contact">
-            <ul class="contact-info">
-                <li>📧 Email: <a href="mailto:namakamu@email.com">amelputri8866@gmail.com</a></li>
-                <li>💼 Instagram: <a href="https://linkedin.com/in/namakamu">@melliaptrri</a></li>
-                <li>💬 WhatsApp: <a href="https://wa.me/6281234567890">+6289530294376</a></li>
-            </ul>
-    
-            <form class="contact-form">
-                <input type="text" name="nama" placeholder="Nama Kamu" required>
-                <input type="email" name="email" placeholder="Email Kamu" required>
-                <textarea name="pesan" placeholder="Tulis pesan kamu di sini..." required></textarea>
-                <button type="submit">Kirim Pesan</button>
-            </form>
-        </div> 
-        <footer>
-            <p> &copy; Portofolio Sang Jagoan!
-            </p>
-        </footer> 
-    <script src="js/script.js"></script>   
-<body>
-
-    

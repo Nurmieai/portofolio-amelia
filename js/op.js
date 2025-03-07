@@ -1,3 +1,3 @@
 function masukPortofolio() {
-    window.location.href = "portofolio.html";
+    window.location.href = "index.html";
 }
